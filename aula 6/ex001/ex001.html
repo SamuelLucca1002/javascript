@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: rgba(255, 228, 196, 0.658);
+        }
+
+        p {
+            text-align: justify;
+            font-size: 1.3em;
+        }
+
+        h1 > p {
+        display: none;
+        }
+
+        h1:hover > p {
+            display: block;
+            text-decoration: underline;
+            background-color: darkblue;
+            color: white;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>olá mundo
+        <p>já me livrei da maldição kkkkk</p>
+    </h1>
+    <p>Estou livre.</p>
+
+    <script>
+        window.alert('Minha primeira mensagem.')
+        window.confirm('Está gostando de JavaScript') //janela com botão OK e Cancelar
+        window.prompt('Qual é o seu nome?') //vai perguntar o nome
+    </script>
+</body>
+</html>
