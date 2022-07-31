@@ -25,7 +25,7 @@
     <h1>Somando valores</h1>
     <input type="number" name="txtn1" id="txtn1"> +
     <input type="number" name="txtn2" id="txtn2">
-    <input type="button" value="somar" onclick="somar()">
+    <input type="button" value="calcular" onclick="somar()">
     <div id="res">Resultado</div>
     <!-- valores 1 fim-->
 
@@ -33,7 +33,7 @@
     <h1 id="h2">Subtrair valores</h1>
     <input type="number" name="sub1" id="sub1"> -
     <input type="number" name="sub2" id="sub2">
-    <input type="button" value="Subtrair" onclick="subtrair()">
+    <input type="button" value="calcular" onclick="subtrair()">
     <div id="res2">Resultado</div>
     <!-- valores 2 -->
 
@@ -58,7 +58,7 @@
             var n3 = Number(sub01.value)
             var n4 = Number(sub02.value)
             var sub = n3 - n4
-            res02.innerHTML = `O resultado da operação ${n3} - ${n4} é`
+            res02.innerHTML = `O resultado da operação ${n3} - ${n4} é ${sub}`
         }
         //valores 2 fim
     </script>
