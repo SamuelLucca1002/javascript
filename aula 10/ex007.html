@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>somando números</title>
+    <style>
+        body {
+            font: normal 18pt arial
+        }
+
+        input {
+            font: normal 18pt arial;
+            width: 100px;
+        }
+        
+        h1#h2 {
+            border-top: solid black 1px;
+        }
+    </style>
+</head>
+<body>
+    <!-- valores 1 -->
+    <h1>Somando valores</h1>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="somar" onclick="somar()">
+    <div id="res">Resultado</div>
+    <!-- valores 1 fim-->
+
+    <!-- valores 2 -->
+    <h1 id="h2">Subtrair valores</h1>
+    <input type="number" name="sub1" id="sub1"> -
+    <input type="number" name="sub2" id="sub2">
+    <input type="button" value="Subtrair" onclick="subtrair()">
+    <div id="res2">Resultado</div>
+    <!-- valores 2 -->
+
+    <script>
+        //valores 1
+        function somar() {
+            var tn1 = window.document.getElementById("txtn1")
+            var tn2 = window.document.querySelector("input#txtn2")
+            var res = window.document.getElementById("res")
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${s}`
+        }
+        //valores 1 fim
+
+        //valores 2
+        function subtrair() {
+            var sub01 = window.document.getElementById("sub1")
+            var sub02 = window.document.getElementById("sub2")
+            var res02 = window.document.getElementById("res2")
+            var n3 = Number(sub01.value)
+            var n4 = Number(sub02.value)
+            var sub = n3 - n4
+            res02.innerHTML = `O resultado da operação ${n3} - ${n4} é`
+        }
+        //valores 2 fim
+    </script>
+</body>
+</html>
