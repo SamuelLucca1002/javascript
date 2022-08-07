@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imigração</title>
+</head>
+<body>
+    <h1>Controle de fornteira</h1> 
+    <p>Por vafor digite sua nacionalidade para que possamos verificar a situação do seu pedido.</p>
+
+   País de origem: <input type="text" name="nacio" id="nacio">
+    <input type="button" value="verificar" onclick="verificar()">
+    <input type="button" value="resetar" onclick="reset()">
+    <div id="res">Resultado</div>
+
+    <script>
+        function verificar() {
+            var pais = document.getElementById('nacio').value
+            var res = document.getElementById('res')
+            if (pais == 'Brasil') {
+                res.style.color = 'green'
+                res.innerHTML = `<p>Obrigado</p>`
+                res.innerHTML += `<p><strong>SUA PASSAGEM FOI LIBERADA!</strong></p>`
+            }else {
+                res.style.color = 'red'
+                res.innerHTML = `<p><strong>SUA PASSAGEM FOI BLOQUEADA!</strong></p>`
+            }
+        }
+
+        function reset(){
+                var reset3 = document.getElementById('nacio')
+                var reset4 = document.getElementById('res')
+                reset3.value = '';
+                reset4.innerHTML = 'Resultado';
+                reset4.style.color = 'black';
+            }
+    </script>
+</body>
+</html>
