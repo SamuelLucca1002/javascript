@@ -58,3 +58,12 @@ function verificar() {
    }
 }
 //fim do verificador
+
+//Resetar valores
+function reset() {
+    var resetAno = document.getElementById("txtano");
+    var resetRes = document.querySelector("div#res");
+
+    resetAno.value = " ";
+    resetRes.innerHTML = "Primeiramente preencha os dados";
+}
